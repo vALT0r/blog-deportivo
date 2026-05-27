@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Deporte Motor - Daerbon | Carreras y Eventos Motor</title>
-    <meta name="description" content="Blog de deporte motor de Daerbon - Galería de fotos de carreras, rallys y sesiones de fotos de alta velocidad. Capturando la adrenalina y la emoción de los motores.">
+    <title>Blog de Deporte Motor y Fútbol - Daerbon | Carreras y Eventos</title>
+    <meta name="description" content="Blog fotográfico de Daerbon - Galería de deporte motor, fútbol y más. Capturando la adrenalina de los motores y la pasión de la cancha.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -48,18 +48,35 @@
                 <a href="#inicio" class="logo">
                     <span class="logo-icon" aria-hidden="true">
                         <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="iconTitle">
-                            <title id="iconTitle">Icono de deporte motor</title>
-                            <circle cx="32" cy="32" r="28" fill="#0B0F14" stroke="#7CE2FF" stroke-width="3"/>
-                            <path d="M32 6 L32 58" stroke="#7CE2FF" stroke-width="3"/>
-                            <path d="M6 32 L58 32" stroke="#7CE2FF" stroke-width="3"/>
-                            <path d="M18 18 L26 18 L30 26 L22 26 Z" fill="#A9B0B8"/>
-                            <path d="M38 38 L46 38 L50 46 L42 46 Z" fill="#A9B0B8"/>
-                            <path d="M18 46 L26 46 L30 38 L22 38 Z" fill="#A9B0B8"/>
-                            <circle cx="18" cy="32" r="10" fill="none" stroke="#A9B0B8" stroke-width="3"/>
-                            <circle cx="46" cy="32" r="10" fill="none" stroke="#A9B0B8" stroke-width="3"/>
+                            <title id="iconTitle">Icono de Motor y Fútbol</title>
+                            <defs>
+                                <clipPath id="leftHalf"><rect x="0" y="0" width="32" height="64" /></clipPath>
+                                <clipPath id="rightHalf"><rect x="32" y="0" width="32" height="64" /></clipPath>
+                            </defs>
+                            <circle cx="32" cy="32" r="28" fill="none" stroke="#7CE2FF" stroke-width="3"/>
+                            
+                            <!-- Mitad Rueda (Motor) -->
+                            <g clip-path="url(#leftHalf)">
+                                <circle cx="32" cy="32" r="22" fill="none" stroke="#A9B0B8" stroke-width="6" stroke-dasharray="4 2"/>
+                                <circle cx="32" cy="32" r="12" fill="none" stroke="#7CE2FF" stroke-width="3"/>
+                                <line x1="32" y1="32" x2="10" y2="10" stroke="#7CE2FF" stroke-width="3"/>
+                                <line x1="32" y1="32" x2="10" y2="54" stroke="#7CE2FF" stroke-width="3"/>
+                                <line x1="32" y1="32" x2="4" y2="32" stroke="#7CE2FF" stroke-width="3"/>
+                            </g>
+                            
+                            <!-- Mitad Pelota (Fútbol) -->
+                            <g clip-path="url(#rightHalf)">
+                                <path d="M 32 20 L 40 20 L 44 28 L 40 36 L 32 36" fill="none" stroke="#E0E6EB" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path d="M 40 20 L 48 10" stroke="#E0E6EB" stroke-width="2.5"/>
+                                <path d="M 44 28 L 56 28" stroke="#E0E6EB" stroke-width="2.5"/>
+                                <path d="M 40 36 L 48 48" stroke="#E0E6EB" stroke-width="2.5"/>
+                            </g>
+                            
+                            <!-- Línea Divisoria -->
+                            <line x1="32" y1="4" x2="32" y2="60" stroke="#7CE2FF" stroke-width="3"/>
                         </svg>
                     </span>
-                    <span class="logo-text">Deporte Motor</span>
+                    <span class="logo-text">Motor & Deportes</span>
                 </a>
                 <ul class="nav-menu">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
@@ -78,8 +95,8 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Capturando la Adrenalina de los Motores</h1>
-            <p class="hero-subtitle">Galería de deporte motor y carreras. Sesiones de rally, pista, karting y actividades de alta velocidad. Documentando la emoción y el estilo del automovilismo en cada evento.</p>
+            <h1 class="hero-title">Adrenalina en la Pista y en la Cancha</h1>
+            <p class="hero-subtitle">Galería fotográfica de automovilismo, fútbol y otras disciplinas. Documentando la velocidad, la acción y la pasión en cada evento.</p>
             <a href="#eventos" class="cta-button">Ver Eventos</a>
         </div>
     </section>
@@ -88,7 +105,7 @@
     <section id="eventos" class="events-section">
         <div class="container">
             <h2 class="section-title">Eventos Deportivos</h2>
-            <p class="section-subtitle">Explora las sesiones fotográficas de carreras y eventos motor</p>
+            <p class="section-subtitle">Explora las sesiones fotográficas de carreras, partidos y eventos deportivos</p>
             
             <!-- Search and Filters Bar -->
             <div class="search-filters-container">
@@ -236,8 +253,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Deporte Motor</h4>
-                    <p>Galería de fotografía de automovilismo, rally y velocidad por Daerbon.</p>
+                    <h4>Motor & Deportes</h4>
+                    <p>Galería de fotografía de automovilismo, fútbol y eventos deportivos por Daerbon.</p>
                 </div>
                 
                 <div class="footer-section">
