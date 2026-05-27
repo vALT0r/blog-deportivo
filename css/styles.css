@@ -172,8 +172,8 @@ a:hover {
 
 .logo-image-wrapper {
     position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.2rem;
+    height: 4.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,6 +188,22 @@ a:hover {
 .logo i {
     font-size: 1.8rem;
 }
+
+.nav-link-portfolio {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link-portfolio i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    font-size: 1rem;
+}
+
 
 .nav-menu {
     display: flex;
@@ -244,9 +260,9 @@ a:hover {
 .hero {
     background: var(--gradient);
     color: var(--secondary-color);
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
-    min-height: 500px;
+    min-height: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
