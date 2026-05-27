@@ -171,16 +171,15 @@ a:hover {
 }
 
 .main-logo {
-    width: 2.2rem;
-    height: 2.2rem;
-    object-fit: contain; /* Asegura que la imagen completa sea visible */
-    border-radius: 50%; /* Si quieres que la imagen se vea circular */
-    /* Si el logo tiene fondo blanco y quieres integrarlo en un tema oscuro,
-       podrías considerar un filtro para invertir colores o hacer un poco de contraste
-       dependiendo de cómo se vea el logo con el fondo oscuro.
-       Por ejemplo: filter: invert(1) grayscale(1) brightness(1.5); */
-    background-color: var(--background-light); /* Fondo para que el logo no sea completamente blanco sobre oscuro */
-    padding: 2px;
+    width: 3.5rem; /* Aumentar el tamaño */
+    height: 3.5rem; /* Aumentar el tamaño */
+    object-fit: contain; 
+    transform: rotate(-8deg); /* Inclinación ligera */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .main-logo {
+    transform: rotate(0deg) scale(1.05);
 }
 
 .logo i {
