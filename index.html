@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Deportivo - Daerbon | Eventos y Sesiones de Fotografía Deportiva</title>
+    <meta name="description" content="Blog deportivo de Daerbon - Galería de fotos de eventos deportivos, sesiones de fútbol, atletismo y más. Capturando la acción y emoción del deporte.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8XBS134N7Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8XBS134N7Y');
+    </script>
+    
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <p>Cargando eventos...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#inicio" class="logo">
+                    <i class="fas fa-football"></i>
+                    <span>Blog Deportivo</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Capturando la Acción del Deporte</h1>
+            <p class="hero-subtitle">Galería de eventos fotográficos deportivos. Sesiones de fútbol, atletismo, y más disciplinas. Documentando los momentos más emocionantes de la competencia.</p>
+            <a href="#eventos" class="cta-button">Ver Eventos</a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="eventos" class="events-section">
+        <div class="container">
+            <h2 class="section-title">Eventos Deportivos</h2>
+            <p class="section-subtitle">Explora las sesiones fotográficas de eventos</p>
+            
+            <!-- Search and Filters Bar -->
+            <div class="search-filters-container">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Buscar por palabras clave..."
+                        aria-label="Buscar eventos"
+                    >
+                </div>
+                
+                <div class="filters-container">
+                    <label for="category-filter" class="filter-label">Categoría:</label>
+                    <select id="category-filter" class="category-filter" aria-label="Filtrar por categoría">
+                        <option value="all">Todos</option>
+                        <option value="futbol">⚽ Fútbol</option>
+                        <option value="atletismo">🏃 Atletismo</option>
+                        <option value="natacion">🏊 Natación</option>
+                        <option value="ciclismo">🚴 Ciclismo</option>
+                        <option value="tenis">🎾 Tenis</option>
+                        <option value="hockey">🏒 Hockey</option>
+                        <option value="otro">📷 Otro</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Results Counter -->
+            <div class="results-info">
+                <p id="results-counter">Cargando eventos...</p>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid" id="events-grid">
+                <!-- Los eventos se cargarán dinámicamente aquí -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No hay eventos encontrados</h3>
+                <p>Intenta con otras palabras clave o diferentes filtros</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Modal -->
+    <div class="event-modal" id="event-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar modal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header">
+                <h3 class="modal-title" id="event-title"></h3>
+                <div class="event-metadata">
+                    <div class="metadata-item">
+                        <i class="fas fa-calendar"></i>
+                        <span id="event-date"></span>
+                    </div>
+                    <div class="metadata-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="event-location"></span>
+                    </div>
+                    <div class="metadata-item">
+                        <i class="fas fa-user"></i>
+                        <span id="event-athlete"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-description">
+                <p id="event-description"></p>
+            </div>
+
+            <div class="modal-gallery">
+                <div class="modal-image-container">
+                    <img class="modal-image" id="modal-image" src="" alt="Foto del evento">
+                    <div class="modal-image-counter">
+                        <span id="image-counter">1 / 1</span>
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <div class="modal-nav" id="modal-nav">
+                    <button class="modal-prev" id="modal-prev" aria-label="Foto anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="modal-next" id="modal-next" aria-label="Siguiente foto">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Interesado en una sesión fotográfica?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ponte en Contacto</h3>
+                    <p>Para consultas sobre eventos deportivos o sesiones fotográficas personalizadas.</p>
+                    <div class="contact-details">
+                        <a href="mailto:daerbon@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> daerbon@gmail.com
+                        </a>
+                        <a href="https://www.instagram.com/daerbon/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fab fa-instagram"></i> @daerbon
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/daerbon@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://sport.daerbon.com.ar#contacto">
+                    
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Blog Deportivo</h4>
+                    <p>Galería de eventos fotográficos deportivos por Daerbon</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="https://daerbon.com.ar" target="_blank" rel="noopener noreferrer">Portfolio Principal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/daerbon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daerbon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/vALT0r" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daerbon - Fotografía Deportiva. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

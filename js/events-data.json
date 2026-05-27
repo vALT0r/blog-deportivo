@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "title": "Torneo Regional de Fútbol - Final Decisiva",
+    "date": "2026-05-20",
+    "location": "Estadio Jorge Rafael Videla, Rosario, Santa Fe",
+    "sport_category": "futbol",
+    "athlete_team": "Equipo Regional Rosario",
+    "description": "Captura de la intensa final del torneo regional de fútbol donde ambos equipos se disputaron la gloria. Momentos de acción, goles, celebraciones y la emoción de la competencia documentados en esta sesión fotográfica. Tomas desde múltiples ángulos capturando el fútbol en su forma más pura: velocidad, técnica y pasión.",
+    "summary": "Final regional de fútbol con acción intensa, goles memorables y celebraciones épicas.",
+    "keywords": ["futbol", "acción", "final", "gol", "deporte", "competencia"],
+    "thumbnail": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/futbol-1.jpg",
+    "gallery_images": [
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/futbol-1.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/futbol-1.jpg",
+        "caption": "Pase decisivo en el mediocampo"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/futbol-2.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/futbol-2.jpg",
+        "caption": "Remate a portería"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/futbol-3.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/futbol-3.jpg",
+        "caption": "Celebración del gol"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Campeonato Metropolitano de Atletismo",
+    "date": "2026-05-15",
+    "location": "Pista de Atletismo Central, Buenos Aires",
+    "sport_category": "atletismo",
+    "athlete_team": "Atletas de Argentina",
+    "description": "Sesión fotográfica del campeonato metropolitano de atletismo. Carrera de 100 metros, salto largo y lanzamiento de jabalina. Documentando los máximos esfuerzos de los atletas en competencia, sus expresiones de concentración y la explosión de movimiento en cada disciplina.",
+    "summary": "Competencias de atletismo con atletas de élite en múltiples disciplinas.",
+    "keywords": ["atletismo", "carrera", "velocidad", "concentración", "deporte", "competencia"],
+    "thumbnail": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/atletismo-1.jpg",
+    "gallery_images": [
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/atletismo-1.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/atletismo-1.jpg",
+        "caption": "Salida explosiva de 100 metros"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/atletismo-2.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/atletismo-2.jpg",
+        "caption": "Saltador en el momento del salto"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/atletismo-3.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/atletismo-3.jpg",
+        "caption": "Lanzamiento de jabalina"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/atletismo-4.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/atletismo-4.jpg",
+        "caption": "Llegada a meta"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Torneo de Tenis - Categoría Senior",
+    "date": "2026-05-10",
+    "location": "Club de Tenis Rosario, Rosario, Santa Fe",
+    "sport_category": "tenis",
+    "athlete_team": "Tenistas Argentinos",
+    "description": "Captura de semifinal de torneo de tenis senior. Puntos decisivos, votos ganadores y momentos de tensión en cada juego. Las expresiones faciales de los jugadores y sus movimientos técnicos documentados en alta calidad para preservar la intensidad de la competencia.",
+    "summary": "Semifinal de tenis con juegos emocionantes y puntos espectaculares.",
+    "keywords": ["tenis", "competencia", "deporte", "profesional", "torneo"],
+    "thumbnail": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/tenis-1.jpg",
+    "gallery_images": [
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/tenis-1.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/tenis-1.jpg",
+        "caption": "Saque potente"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/tenis-2.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/tenis-2.jpg",
+        "caption": "Golpe de revés"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/tenis-3.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/tenis-3.jpg",
+        "caption": "Net challenge"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Campeonato de Natación - Piscina Olímpica",
+    "date": "2026-05-05",
+    "location": "Complejo Acuático Olímpico, Buenos Aires",
+    "sport_category": "natacion",
+    "athlete_team": "Nadadores Federales",
+    "description": "Documentación fotográfica del campeonato de natación con competidores de diferentes categorías. Nados de estilo libre, pecho, mariposa y dorso capturados bajo el agua y en la superficie. Imágenes que congelan el movimiento y la gracia de los nadadores en su máximo desempeño.",
+    "summary": "Competencia de natación con nadadores de múltiples estilos y categorías.",
+    "keywords": ["natacion", "piscina", "competencia", "velocidad", "agua"],
+    "thumbnail": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/natacion-1.jpg",
+    "gallery_images": [
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/natacion-1.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/natacion-1.jpg",
+        "caption": "Estilo libre - largada"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/natacion-2.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/natacion-2.jpg",
+        "caption": "Nado a mariposa"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/natacion-3.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/natacion-3.jpg",
+        "caption": "Vuelta en la piscina"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cicletada Solidaria - Ruta Metropolitana",
+    "date": "2026-04-28",
+    "location": "Costanera Sur, Buenos Aires",
+    "sport_category": "ciclismo",
+    "athlete_team": "Ciclistas Organizados",
+    "description": "Sesión fotográfica de cicletada solidaria con cientos de participantes. Documentación de la partida, momentos de camaradería, paisajes durante la ruta y la llegada a meta. Imágenes que capturan la comunidad y el espíritu deportivo de los ciclistas en acción.",
+    "summary": "Cicletada solidaria con participantes de todas las edades en ruta metropolitana.",
+    "keywords": ["ciclismo", "cicletada", "ruta", "comunidad", "solidario"],
+    "thumbnail": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/ciclismo-1.jpg",
+    "gallery_images": [
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/ciclismo-1.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/ciclismo-1.jpg",
+        "caption": "Largada de la cicletada"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/ciclismo-2.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/ciclismo-2.jpg",
+        "caption": "Peloton en la ruta"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/ciclismo-3.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/ciclismo-3.jpg",
+        "caption": "Llegada a meta"
+      },
+      {
+        "image": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_400,h_280,c_fill,q_85,f_auto/v1755281395/portfolio/eventos/ciclismo-4.jpg",
+        "fullImage": "https://res.cloudinary.com/dunjl9u7y/image/upload/w_1200,c_limit,q_90,f_auto/v1755281395/portfolio/eventos/ciclismo-4.jpg",
+        "caption": "Ciclistas descansando"
+      }
+    ]
+  }
+]
