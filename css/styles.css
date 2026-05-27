@@ -9,16 +9,16 @@
 }
 
 :root {
-    --primary-color: #7CE2FF; /* Azul cielo brillante, evoca metal pulido, tecnología */
+    --primary-color: #D32F2F; /* Rojo motor/competición, reemplazando al celeste */
     --secondary-color: #0B0F14; /* Gris muy oscuro, casi negro, para simular metales oscuros o partes de motor */
-    --accent-color: #00F0FF; /* Cian eléctrico, para detalles y elementos interactivos, evocando luces LED o medidores */
+    --accent-color: #E53935; /* Rojo vibrante para detalles */
     --text-dark: #E0E6EB; /* Gris claro para el texto principal sobre fondos oscuros, similar al color del aluminio */
     --text-light: #A9B0B8; /* Gris medio para texto secundario o menos prominente */
     --background-light: #1C2025; /* Gris oscuro para fondos de secciones o tarjetas, recordando el interior de una máquina */
     --white: #F8F9FA; /* Blanco roto para elementos que necesitan contraste */
     --black: rgba(0, 0, 0, 0.7); /* Negro semitransparente para superposiciones */
     --shadow: rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para dar profundidad */
-    --gradient: linear-gradient(135deg, #00F0FF 0%, #7CE2FF 100%); /* Gradiente de acento y primario */
+    --gradient: linear-gradient(135deg, #B71C1C 0%, #E53935 100%); /* Gradiente rojo deportivo */
     --border-radius: 8px;
     --transition: all 0.3s ease;
     --modal-background: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el modal, para que las imágenes resalten más */
