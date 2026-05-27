@@ -9,16 +9,16 @@
 }
 
 :root {
-    --primary-color: #D32F2F; /* Rojo motor/competición, reemplazando al celeste */
-    --secondary-color: #0B0F14; /* Gris muy oscuro, casi negro, para simular metales oscuros o partes de motor */
-    --accent-color: #E53935; /* Rojo vibrante para detalles */
-    --text-dark: #E0E6EB; /* Gris claro para el texto principal sobre fondos oscuros, similar al color del aluminio */
+    --primary-color: #FF6D00; /* Naranja vibrante (estilo McLaren/KTM), neutral pero muy deportivo */
+    --secondary-color: #121212; /* Gris grafito muy oscuro, evita el negro puro */
+    --accent-color: #FF9100; /* Naranja más claro para brillos */
+    --text-dark: #E0E6EB; /* Gris claro para el texto principal sobre fondos oscuros */
     --text-light: #A9B0B8; /* Gris medio para texto secundario o menos prominente */
-    --background-light: #1C2025; /* Gris oscuro para fondos de secciones o tarjetas, recordando el interior de una máquina */
+    --background-light: #1E1E1E; /* Gris oscuro para fondos de secciones o tarjetas */
     --white: #F8F9FA; /* Blanco roto para elementos que necesitan contraste */
     --black: rgba(0, 0, 0, 0.7); /* Negro semitransparente para superposiciones */
-    --shadow: rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para dar profundidad */
-    --gradient: linear-gradient(135deg, #B71C1C 0%, #E53935 100%); /* Gradiente rojo deportivo */
+    --shadow: rgba(0, 0, 0, 0.4); /* Sombra más pronunciada para dar profundidad */
+    --gradient: linear-gradient(135deg, #E65100 0%, #FF9100 100%); /* Gradiente naranja deportivo */
     --border-radius: 8px;
     --transition: all 0.3s ease;
     --modal-background: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el modal, para que las imágenes resalten más */
@@ -170,15 +170,54 @@ a:hover {
     white-space: nowrap;
 }
 
-.logo-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-icon svg {
+.logo-image-composite {
+    position: relative;
     width: 2.2rem;
     height: 2.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transform: rotate(10deg); /* Ligeramente inclinado para dar sensación de movimiento */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-image-composite {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.logo-half {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Diagonal cut: top-left (fútbol) */
+.logo-half.ball {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    filter: contrast(1.1) grayscale(0.2);
+}
+
+/* Diagonal cut: bottom-right (motor) */
+.logo-half.wheel {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    filter: contrast(1.2);
+}
+
+/* Separator line simulating diagonal cut */
+.logo-image-composite::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: 48%;
+    width: 2px;
+    height: 140%;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+    z-index: 2;
 }
 
 .logo i {
@@ -257,7 +296,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,60 C300,120 300,0 600,60 C900,120 900,0 1200,60 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.05)"/></svg>');
     background-repeat: repeat-x;
     animation: wave 15s linear infinite;
     opacity: 0.3;
