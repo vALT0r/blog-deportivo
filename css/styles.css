@@ -9,18 +9,19 @@
 }
 
 :root {
-    --primary-color: #FF8000;
-    --secondary-color: #0E131F;
-    --accent-color: #47C7FC;
-    --text-dark: #0E131F;
-    --text-light: #7f8c8d;
-    --background-light: #F2F3E2;
-    --white: #ffffff;
-    --black: rgba(14, 19, 31, 0.8);
-    --shadow: rgba(0, 0, 0, 0.1);
-    --gradient: linear-gradient(135deg, #FF8000 0%, #47C7FC 100%);
+    --primary-color: #7CE2FF; /* Azul cielo brillante, evoca metal pulido, tecnología */
+    --secondary-color: #0B0F14; /* Gris muy oscuro, casi negro, para simular metales oscuros o partes de motor */
+    --accent-color: #00F0FF; /* Cian eléctrico, para detalles y elementos interactivos, evocando luces LED o medidores */
+    --text-dark: #E0E6EB; /* Gris claro para el texto principal sobre fondos oscuros, similar al color del aluminio */
+    --text-light: #A9B0B8; /* Gris medio para texto secundario o menos prominente */
+    --background-light: #1C2025; /* Gris oscuro para fondos de secciones o tarjetas, recordando el interior de una máquina */
+    --white: #F8F9FA; /* Blanco roto para elementos que necesitan contraste */
+    --black: rgba(0, 0, 0, 0.7); /* Negro semitransparente para superposiciones */
+    --shadow: rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para dar profundidad */
+    --gradient: linear-gradient(135deg, #00F0FF 0%, #7CE2FF 100%); /* Gradiente de acento y primario */
     --border-radius: 8px;
     --transition: all 0.3s ease;
+    --modal-background: rgba(0, 0, 0, 0.9); /* Fondo oscuro para el modal, para que las imágenes resalten más */
 }
 
 html {
