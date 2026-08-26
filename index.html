@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Deporte Motor y Fútbol - Daerbon | Carreras y Eventos</title>
-    <meta name="description" content="Blog fotográfico de Daerbon - Galería de deporte motor, fútbol y más. Capturando la adrenalina de los motores y la pasión de la cancha.">
+    <title>Deportes, motor y algo más... | Daerbon Photography</title>
+    <meta name="description" content="Blog fotográfico de Daerbon - Deportes, motor y algo más. Capturando la adrenalina de los motores y la pasión de cada evento.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -47,9 +47,9 @@
             <div class="nav-container">
                 <a href="#inicio" class="logo">
                     <div class="logo-image-wrapper">
-                        <img src="images/logo.png" alt="Motor & Deportes Logo" class="main-logo">
+                        <img src="images/logo.png" alt="Deportes, motor y algo más..." class="main-logo">
                     </div>
-                    <span class="logo-text">Motor & Deportes</span>
+                    <span class="logo-text">Deportes, motor y algo mas...</span>
                 </a>
                 <ul class="nav-menu">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
@@ -129,55 +129,52 @@
     </section>
 
     <!-- Event Modal -->
-    <div class="event-modal" id="event-modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <button class="modal-close" id="modal-close" aria-label="Cerrar modal">
-                <i class="fas fa-times"></i>
-            </button>
-            
-            <div class="modal-header">
-                <h3 class="modal-title" id="event-title"></h3>
-                <div class="event-metadata">
-                    <div class="metadata-item">
-                        <i class="fas fa-calendar"></i>
-                        <span id="event-date"></span>
-                    </div>
-                    <div class="metadata-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span id="event-location"></span>
-                    </div>
-                    <div class="metadata-item">
-                        <i class="fas fa-user"></i>
-                        <span id="event-athlete"></span>
+    <!-- Cinema Lightbox Modal -->
+    <div class="modal cinema-lightbox" id="event-modal">
+        <div class="lightbox-backdrop" onclick="closeEventModal()"></div>
+        <div class="lightbox-container">
+            <!-- Top Floating Header -->
+            <header class="lightbox-header">
+                <div class="lightbox-header-info">
+                    <span class="lightbox-badge" id="event-category-badge">🏁 Automovilismo</span>
+                    <h2 class="lightbox-title" id="event-title"></h2>
+                    <div class="lightbox-meta">
+                        <span><i class="fas fa-calendar-alt"></i> <span id="event-date"></span></span>
+                        <span><i class="fas fa-map-marker-alt"></i> <span id="event-location"></span></span>
+                        <span id="event-athlete-wrap"><i class="fas fa-user"></i> <span id="event-athlete"></span></span>
                     </div>
                 </div>
-            </div>
-
-            <div class="modal-description">
-                <p id="event-description"></p>
-            </div>
-
-            <div class="modal-gallery">
-                <div class="modal-image-container">
-                    <img class="modal-image" id="modal-image" src="" alt="Foto del evento">
-                    <div class="modal-image-counter">
-                        <span id="image-counter">1 / 1</span>
-                    </div>
+                <div class="lightbox-header-controls">
+                    <div class="lightbox-counter" id="image-counter">1 / 1</div>
+                    <button class="lightbox-btn" id="btn-toggle-fullscreen" title="Pantalla Completa (F)"><i class="fas fa-expand"></i></button>
+                    <button class="lightbox-btn close-btn" id="modal-close" title="Cerrar (Esc)"><i class="fas fa-times"></i></button>
                 </div>
+            </header>
+
+            <!-- Main Stage (Maximized Photograph) -->
+            <main class="lightbox-stage">
+                <button class="lightbox-nav-btn prev" id="modal-prev" aria-label="Foto anterior (←)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
                 
-                <!-- Navigation buttons -->
-                <div class="modal-nav" id="modal-nav">
-                    <button class="modal-prev" id="modal-prev" aria-label="Foto anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="modal-next" id="modal-next" aria-label="Siguiente foto">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="lightbox-image-wrap">
+                    <img class="lightbox-image" id="modal-image" src="" alt="Foto del evento">
                 </div>
-            </div>
+
+                <button class="lightbox-nav-btn next" id="modal-next" aria-label="Foto siguiente (→)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </main>
+
+            <!-- Bottom Filmstrip Navigation -->
+            <footer class="lightbox-footer">
+                <div class="lightbox-filmstrip" id="lightbox-filmstrip">
+                    <!-- Miniaturas dinámicas -->
+                </div>
+            </footer>
         </div>
     </div>
+
 
     <!-- Contact Section -->
     <section id="contacto" class="contact-section">
@@ -229,8 +226,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Motor & Deportes</h4>
-                    <p>Galería de fotografía de automovilismo, fútbol y eventos deportivos por Daerbon.</p>
+                    <h4>Deportes, motor y algo más...</h4>
+                    <p>Galería de fotografía deportiva, automovilismo y eventos por Daerbon.</p>
                 </div>
                 
                 <div class="footer-section">
@@ -260,7 +257,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Daerbon - Fotografía de Deporte Motor. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Daerbon Photography. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -269,3 +266,5 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
