@@ -2367,7 +2367,7 @@
       }
     ],
     "updated_at": "2026-08-26T03:22:19.783Z",
-    "ig_post_id": "18058059596547252"
+    "ig_post_id": "17965110165149638"
   },
   {
     "id": 10,
@@ -2379,7 +2379,7 @@
     "title": "Paseo por San Pedro",
     "date": "2026-08-23",
     "location": "San Pedro y VDO",
-    "sport_category": "otro",
+    "sport_category": "viajes",
     "athlete_team": "",
     "description": "",
     "summary": "",
@@ -2536,7 +2536,8 @@
         "caption": "DSC_8412.jpg",
         "isVertical": true
       }
-    ]
+    ],
+    "category": "viajes"
   },
   {
     "id": 9,
@@ -2548,7 +2549,7 @@
     "title": "Paseo por San Nicolas",
     "date": "2025-09-13",
     "location": "San Nicolas",
-    "sport_category": "otro",
+    "sport_category": "viajes",
     "athlete_team": "",
     "description": "",
     "summary": "",
@@ -2671,7 +2672,8 @@
         "isVertical": false
       }
     ],
-    "ig_post_id": "18207571393363544"
+    "ig_post_id": "18207571393363544",
+    "category": "viajes"
   },
   {
     "title": "CAF Fecha 5 - San Nicolas",
@@ -3088,6 +3090,7 @@
     "updated_at": "2026-08-25T21:43:52.619Z",
     "published_at": "2026-08-25",
     "ig_status": "published",
-    "ig_post_id": "18107724254135184"
+    "ig_post_id": "18107724254135184",
+    "category": "automovilismo"
   }
 ]

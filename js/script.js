@@ -163,9 +163,10 @@ function initializeFilters() {
 
 function applyFiltersAndSearch() {
     filteredEvents = allEvents.filter(event => {
+        const evCat = (event.category || event.sport_category || '').toLowerCase();
         const categoryMatch = currentSportFilter === 'all' || 
-            event.sport_category === currentSportFilter ||
-            (currentSportFilter === 'automovilismo' && (event.sport_category === 'motorsport' || event.sport_category === 'automovilismo'));
+            evCat === currentSportFilter.toLowerCase() ||
+            (currentSportFilter === 'automovilismo' && (evCat === 'motorsport' || evCat === 'automovilismo'));
 
         let searchMatch = true;
         if (currentSearchTerm) {
@@ -400,19 +401,26 @@ function formatDate(dateString) {
 }
 
 function getCategoryLabel(category) {
+    if (!category) return '📸 Varios';
+    const cat = String(category).toLowerCase().trim();
     const labels = {
-        'automovilismo': '🏁 Automovilismo',
-        'motorsport': '🏁 Automovilismo',
+        'automovilismo': '🏎️ Automovilismo',
+        'motorsport': '🏎️ Automovilismo',
         'futbol': '⚽ Fútbol',
         'atletismo': '🏃 Atletismo',
         'natacion': '🏊 Natación',
         'ciclismo': '🚴 Ciclismo',
         'tenis': '🎾 Tenis',
         'hockey': '🏑 Hockey',
-        'social': '📸 Social',
-        'otro': '🏆 Deporte'
+        'maraton': '🏅 Maratón / Running',
+        'social': '🎉 Social / Eventos',
+        'naturaleza': '🌿 Naturaleza',
+        'urbano': '🏙️ Urbano & Street',
+        'viajes': '🚗 Viajes & Escapadas',
+        'varios': '📸 Varios',
+        'otro': '🏷️ Varios / Otro'
     };
-    return labels[category] || category || '🏆 Deporte';
+    return labels[cat] || category || '📸 Varios';
 }
 
 function escapeHtml(str) {
