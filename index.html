@@ -184,22 +184,39 @@
     </div>
 
 
-    <!-- Contact Section -->
+        <!-- Contact Section -->
     <section id="contacto" class="contact-section">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
-            <p class="section-subtitle">¿Interesado en una sesión fotográfica?</p>
+            <p class="section-subtitle">¿Interesado en cobertura fotográfica o una sesión personalizada?</p>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Ponte en Contacto</h3>
-                    <p>Para consultas sobre eventos deportivos o sesiones fotográficas personalizadas.</p>
-                    <div class="contact-details">
-                        <a href="mailto:daerbon@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> daerbon@gmail.com
+                    <p>Para consultas sobre eventos deportivos, automovilismo, sesiones particulares o proyectos comerciales.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:daerbon@gmail.com" class="contact-link">daerbon@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+543413578224" class="contact-link">+54 341 357 8224</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Acebal, Santa Fe, Argentina</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/davidbonucci_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @davidbonucci_" class="social-link" title="Instagram @davidbonucci_">
+                            <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.instagram.com/daerbonph/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <i class="fab fa-instagram"></i> @daerbonph
+                        <a href="https://www.linkedin.com/in/daerbon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/vALT0r" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
@@ -207,23 +224,43 @@
                 <form class="contact-form" action="https://formsubmit.co/daerbon@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://sport.daerbon.com.ar#contacto">
+                    <input type="hidden" name="_subject" value="Nueva consulta desde Blog Deportivo Daerbon">
                     
                     <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name" class="visually-hidden">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="visually-hidden">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-select" class="visually-hidden">Tipo de Consulta / Servicio</label>
+                        <select id="service-select" name="service" required>
+                            <option value="">Tipo de Consulta / Servicio</option>
+                            <option value="cobertura-carreras">Cobertura de Carreras / Automovilismo</option>
+                            <option value="deportes">Eventos Deportivos</option>
+                            <option value="sesion-piloto">Sesión Particular para Pilotos / Equipos</option>
+                            <option value="evento-social">Eventos Sociales y Exhibiciones</option>
+                            <option value="otro">Otro</option>
+                        </select>
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" class="visually-hidden">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu consulta o evento..." required></textarea>
                     </div>
                     
-                    <button type="submit" class="submit-button">Enviar</button>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
                 </form>
             </div>
         </div>
@@ -233,25 +270,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Deportes, motor y algo más...</h4>
-                    <p>Galería de fotografía deportiva, automovilismo y eventos por Daerbon.</p>
+                <div class="footer-section footer-brand">
+                    <h4>Daerbon Photography</h4>
+                    <p>Galería de fotografía deportiva, automovilismo y eventos por David Eric Bonucci. Capturando la velocidad, pasión y emoción en pista.</p>
                 </div>
                 
-                <div class="footer-section">
+                <div class="footer-section footer-links">
                     <h4>Enlaces</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#eventos">Eventos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="https://daerbon.com.ar" target="_blank" rel="noopener noreferrer"><i class="fas fa-camera" aria-hidden="true"></i> Portfolio Principal</a></li>
+                        <li><a href="https://daerbon.com.ar" target="_blank" rel="noopener noreferrer"><i class="fas fa-camera"></i> Portfolio Principal</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-section">
+                <div class="footer-section footer-social">
                     <h4>Sígueme</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/daerbonph/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://www.instagram.com/davidbonucci_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @davidbonucci_">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/daerbon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -265,7 +302,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 Daerbon Photography. Todos los derechos reservados.</p>
+                <p>&copy; 2025-2026 David Bonucci Photography. Acebal, Santa Fe, Argentina. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
