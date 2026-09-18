@@ -1,8 +1,17 @@
-# ⚽ Blog Deportivo - Daerbon
+# ⚠️ REPOSITORIO INACTIVO / ARCHIVADO
+
+> **ESTE REPOSITORIO YA NO ESTÁ EN PRODUCCIÓN**  
+> Todo el contenido deportivo y de eventos se unificó en la nueva web `davidbonucci-web` y su dominio oficial: **[davidbonucci.com](https://davidbonucci.com)**.  
+> Todo el tráfico de `sport.daerbon.com.ar` ha sido redirigido vía Cloudflare Redirect Rules a `https://davidbonucci.com`.  
+> Este código se conserva únicamente como archivo histórico.
+
+---
+
+# ⚽ Blog Deportivo - Daerbon (Histórico)
 
 > Galería de fotografías de eventos deportivos - Sesiones de fútbol, atletismo, natación, ciclismo y más.
 
-**URL**: [sport.daerbon.com.ar](https://sport.daerbon.com.ar)
+**URL Anterior**: [sport.daerbon.com.ar](https://sport.daerbon.com.ar) *(Redirigida)*
 
 ## 📋 Descripción
 
